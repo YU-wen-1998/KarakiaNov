@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:scrollbarTrackVertical="@android:drawable/ic_media_play"
+    tools:context=".ui.wintecmaria.MaoriCultureFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.KarakiaNov.AppBarOverlay">
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <VideoView
+                    android:id="@+id/video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView_wintecmarae"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="left"
+                android:padding="4dp"
+                android:text="According to Wintec Te Pūkinga: \n\nWintec Marae"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="399dp" />
+
+            <TextView
+                android:id="@+id/textView_wintec_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="left"
+                android:padding="4dp"
+                android:text="The marae complex takes its name from an area famous for its rich, fertile lands and gardens that linked the network of Waikato sub-tribes (hapū) who lived along the banks of the Waikato River.\n\nThe design of our marae is a contemporary version of traditional aspects with an emphasis on matauranga Māori (learning) and tikanga (customs and traditions). Our marae is multipurpose, where students and staff can conduct and experience teaching, learning and pastoral support in a uniquely Māori environment."
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="left"
+                android:padding="4dp"
+                android:text="Functions"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView_location_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="left"
+                android:padding="4dp"
+                android:text="Wānanga (teaching and learning/overnight stays)\nPōwhiri (welcome visitors)\nSeminars, conferences, workshops\nLectures or demonstrations"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView_wharenui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="left"
+                android:padding="4dp"
+                android:text="Wharenui\n100 seating capacity, 50 staying overnight"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:id="@+id/imageView_wharenui"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:padding="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/wharenui" />
+
+            <TextView
+                android:id="@+id/textView_wharekai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="left"
+                android:padding="4dp"
+                android:text="Wharekai\n50 maximum capacity"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:id="@+id/imageView_wharekai"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:padding="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/wharekai" />
+
+            <TextView
+                android:id="@+id/textView_seminarroom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="left"
+                android:padding="4dp"
+                android:text="Seminar Room\nMaximum 12 – Read more.
+
+"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:id="@+id/imageView_seminarroom"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:padding="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/seminar" />
+
+            <TextView
+                android:id="@+id/textView_outdoor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
+                android:gravity="left"
+                android:padding="4dp"
+                android:text="Outdoor Undercover Area"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:id="@+id/imageView_outdoor"
+                android:layout_width="match_parent"
+                android:layout_height="211dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:padding="0dp"
+                app:layout_constraintDimensionRatio="16:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/outdoor" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wintec | Te Pūkenga,(n.d),(Kia ora and welcome to Te Kōpū Mānia o Kirikiriroa, Wintec Marae.),https://www.wintec.ac.nz/about-wintec/m%C4%81ori/wintec-marae"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_homeFragment">
+    <fragment
+        android:id="@+id/nav_homeFragment"
+        android:name="com.example.karakianov.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_descriptionFragment"
+            app:destination="@id/nav_descriptionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_descriptionFragment"
+        android:name="com.example.karakianov.ui.karakia.DescriptionFragment"
+        android:label="Karakia Description"
+        tools:layout="@layout/fragment_description" >
+        <action
+            android:id="@+id/action_descriptionFragment_to_videoFragment"
+            app:destination="@id/nav_videoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_videoFragment"
+        android:name="com.example.karakianov.ui.karakia.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/nav_about_Us"
+        android:name="com.example.karakianov.ui.aboutus.Aboutus2Fragment"
+        android:label="About Us"
+        tools:layout="@layout/fragment_aboutus2" />
+    <fragment
+        android:id="@+id/nav_Intro"
+        android:name="com.example.karakianov.ui.introduction.IntroductionFragment"
+        android:label="Wintec Introduction"
+        tools:layout="@layout/fragment_introduction">
+        <action
+            android:id="@+id/action_fragment_introduction_to_introVideoFragment"
+            app:destination="@id/introVideoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/introVideoFragment"
+        android:name="com.example.karakianov.ui.introduction.IntroVideoFragment"
+        android:label="Wintec Introduction"
+        tools:layout="@layout/fragment_introvideo" />
+    <fragment
+        android:id="@+id/nav_maoriculture"
+        android:name="com.example.karakianov.ui.wintecmaria.MaoriCultureFragment"
+        android:label="Te Kōpū Mānia o Kirikiriroa"
+        tools:layout="@layout/fragment_maoriculture" />
+
+</navigation>
+

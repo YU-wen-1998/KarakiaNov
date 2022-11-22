@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_homeFragment"
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+            />
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about_Us"
+            android:icon="@drawable/ic_about"
+            android:title="About Us"/>
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Intro"
+            android:icon="@drawable/introduction"
+            android:title="Wintec Introduction"/>
+    </group>
+    <group
+        android:id="@+id/group4"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_maoriculture"
+            android:icon="@drawable/love"
+            android:title="Te Kōpū Mānia"
+            />
+    </group>
+</menu>
